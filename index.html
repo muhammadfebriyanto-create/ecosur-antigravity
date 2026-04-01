@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroScent | Premium Shoe Dryer</title>
+    <meta name="description" content="Discover the AeroScent. Advanced shoe drying technology to keep your footwear fresh and dry.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AeroScent.</a>
+            <div class="nav-links">
+                <a href="#home">Features</a>
+                <a href="#specs">Specs</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-whatsapp-btn" onclick="orderViaWhatsApp()">
+                    <i data-lucide="message-circle"></i>
+                    <span>Order</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Main Product Layout -->
+    <section id="home" class="hero single-product">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <span class="badge">Next-Gen Odor & Moisture Control</span>
+            <h1>AeroScent.</h1>
+            <h2>Breathe Life Into Your Footwear.</h2>
+            <p>The ultimate rapid shoe dryer. Engineered to eliminate deep moisture, kill 99% of bacteria, and keep your shoes incredibly fresh for every adventure.</p>
+            <div class="product-price-large">$89.99</div>
+            <div class="hero-buttons">
+                <button class="btn btn-whatsapp" onclick="orderViaWhatsApp()">
+                    Order via WhatsApp
+                    <i data-lucide="message-circle" style="margin-left: 8px;"></i>
+                </button>
+                <a href="#features" class="btn btn-secondary">Explore Features</a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper large-image">
+            <div class="glass-container float-slow">
+                <img src="fhoto/alat.jpeg" alt="AeroScent Shoe Dryer" class="main-product-img" onerror="this.onerror=null; this.src='https://placehold.co/500x600/1e293b/3b82f6?text=alat.jpeg\n(Image+Placeholder)';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2>Why Choose AeroScent?</h2>
+            <p>Advanced engineering disguised in a sleek profile.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i data-lucide="wind"></i></div>
+                <h3>Dual-Air Channel</h3>
+                <p>360-degree rapid thermal flow dries your shoes in minutes without degrading the materials.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                <h3>Ozone Sterilization</h3>
+                <p>Built-in UV-C and Ozone generator destroys odor-causing bacteria at the microscopic level.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i data-lucide="zap"></i></div>
+                <h3>Smart Auto-Off</h3>
+                <p>Intelligent moisture sensors detect when your shoe is dry and automatically power down to save energy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Image / Specs Section -->
+    <section id="specs" class="specs-section">
+        <div class="specs-container glass-card">
+            <div class="specs-content">
+                <h2>Precision Engineering</h2>
+                <ul>
+                    <li><i data-lucide="check"></i> Constant temperature heating (45°C - 55°C)</li>
+                    <li><i data-lucide="check"></i> Whisper-quiet operation (< 30dB)</li>
+                    <li><i data-lucide="check"></i> Compact, foldable design for travel</li>
+                    <li><i data-lucide="check"></i> Flame-retardant exterior casing</li>
+                </ul>
+            </div>
+            <div class="specs-action">
+                <p class="ready-text">Ready to step into comfort?</p>
+                <button class="btn btn-whatsapp" onclick="orderViaWhatsApp()">
+                    Order via WhatsApp
+                    <i data-lucide="message-circle" style="margin-left: 8px;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>AeroScent.</h3>
+                <p>Innovative care for your active lifestyle.</p>
+            </div>
+            <div class="footer-links" style="flex-direction: column; gap: 0.5rem; text-align: right;">
+                <p style="color: var(--text-primary); font-weight: 600;">Contact Us</p>
+                <button onclick="orderViaWhatsApp()" style="background:none; border:none; color:var(--text-secondary); cursor:pointer; font-size:1.1rem; display:flex; align-items:center; gap:8px; font-family:inherit; transition:var(--transition); justify-content:flex-end;">
+                    <i data-lucide="phone" style="width:16px;height:16px;"></i> +62 882-9508-8081
+                </button>
+            </div>
+        </div>
+        <div style="text-align:center; padding-top: 3rem; color: var(--text-secondary); font-size: 0.85rem;">
+            &copy; 2026 AeroScent. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
